@@ -1,22 +1,70 @@
-# Material-UI-Pomodoro
-A simple Pomodoro timer desktop application created with Electron.js and React.js using MaterialUI
+# Getting Started with Create React App
 
-Features:
-  - Set custom number of timers at a custom interval with custom interval breaks
-  - Sound alerts at the end of a timer
-  - Setting for skipping / not skipping between timers and breaks
-  - Setting for turning on / off sound
-  - Reset timers
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Features soon to come:
-  - Custom pre-set timer length
-  - Desktop notifications
-  - Different color themes
+## Available Scripts
 
-To use, simply copy the code by using `git clone https://github.com/evanbrooks0629/Material-UI-Pomodoro.git`.
-Then, `npm install` to install the required dependencies.
-In one console window, run `npm start`, then in another run `npm run electron-dev`. This will start the application.
+In the project directory, you can run:
 
-![Picture of UI](https://user-images.githubusercontent.com/60624108/145293983-ace85fe4-14f6-4986-ad77-6dba5fc83a50.png)
-![Picture of adding timer](https://user-images.githubusercontent.com/60624108/145295499-b578e96c-3835-41a5-94a0-be310b8b2615.png)
-![Picture of adjusting settings](https://user-images.githubusercontent.com/60624108/145296106-29aac7ba-692a-4c9f-ab6d-0912491258e4.png)
+### `yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
