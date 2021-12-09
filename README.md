@@ -11,6 +11,7 @@ Features Soon To Come:
   - Desktop notifications
   - Change preset timer and break length
   - Color themes
+  - Smaller, more compact UI
 
 To use, first clone the project 
 `git clone https://github.com/evanbrooks0629/Material-UI-Pomodoro.git`
