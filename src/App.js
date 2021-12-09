@@ -63,23 +63,12 @@ function App() {
                     if (hasSound) {
                       playBreak();
                     }
-                    setCurrTimer(currTimer+1);
-                    setBreak(false);
-                    setTitle(`Session ${currBreak} of ${numTimers}`);
-                    setSubtitle('Time to focus!');
-                    setMinutes(timerLength);
-                    if (!skip) {
-                      toggle(false);
-                    }
+                    createTimer();
                 } else {
                   // NOT BREAK
                   if (currTimer >= numTimers) {
                     // DONE
-                    setTitle('Done!');
-                    setSubtitle('Good job!');
-                    setNumTimers(0);
-                    setTimerLength(0);
-                    setBreakLength(0);
+                    createDone();
                     if (hasSound) {
                       playSuccess();
                     }
@@ -89,14 +78,7 @@ function App() {
                     if (hasSound) {
                       playTimer();
                     }
-                    setCurrBreak(currBreak+1);
-                    setBreak(true);
-                    setTitle('Break Time!');
-                    setSubtitle('Take a break!');
-                    setMinutes(breakLength);
-                    if (!skip) {
-                      toggle(false);
-                    }
+                    createBreak();
                   }
                 }
                 clearInterval(myInterval);
@@ -152,41 +134,51 @@ function App() {
     }
   }
 
-  const handleSkip = () => {
-    if (isBreak) {
-      setCurrTimer(currTimer+1);
-      setBreak(false);
-      setTitle(`Session ${currBreak} of ${numTimers}`);
-      setSubtitle('Time to focus!');
-      setMinutes(0);
-      setSeconds(0);
-      setMinutes(timerLength);
-      if (!skip) {
-        toggle(false);
-      }
-  } else {
-    if (currTimer >= numTimers) {
-      setTitle('Done!');
-      setSubtitle('Good job!');
-      setMinutes(0);
-      setSeconds(0);
-      setNumTimers(0);
-      setTimerLength(0);
-      setBreakLength(0);
-
-    } else {
-      setCurrBreak(currBreak+1);
-      setBreak(true);
-      setTitle('Break Time!');
-      setSubtitle('Take a break!');
-      setMinutes(0);
-      setSeconds(0);
-      setMinutes(breakLength);
-      if (!skip) {
-        toggle(false);
-      }
+  const createTimer = () => {
+    setCurrTimer(currTimer+1);
+    setBreak(false);
+    setTitle(`Session ${currBreak} of ${numTimers}`);
+    setSubtitle('Time to focus!');
+    setMinutes(timerLength);
+    setSeconds(0);
+    if (!skip) {
+      toggle(false);
     }
   }
+
+  const createBreak = () => {
+    setCurrBreak(currBreak+1);
+    setBreak(true);
+    setTitle('Break Time!');
+    setSubtitle('Take a break!');
+    setMinutes(breakLength);
+    setSeconds(0);
+    if (!skip) {
+      toggle(false);
+    }
+  }
+
+  const createDone = () => {
+    setTitle('Done!');
+    setSubtitle('Good job!');
+    setMinutes(0);
+    setSeconds(0);
+    setNumTimers(0);
+    setTimerLength(0);
+    setBreakLength(0);
+    toggle(false);
+  }
+
+  const handleSkip = () => {
+    if (isBreak) {
+      createTimer();
+    } else {
+      if (currTimer >= numTimers) {
+        createDone();
+      } else {
+        createBreak();
+      }
+    }
   }
 
   return (
