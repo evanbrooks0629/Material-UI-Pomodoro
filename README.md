@@ -21,6 +21,6 @@ Then,
 Finally, in one console window run `npm start` to start the development server,
 and `npm run electron-build` in another window to show the desktop application.
 
-![App UI](https://user-images.githubusercontent.com/60624108/145302927-71e3fcfe-0261-4bd3-9a41-badf72dadc0a.png)
-![Add Timer](https://user-images.githubusercontent.com/60624108/145302977-3fc335d9-56d1-48e1-bd95-a8da2f5ce629.png)
-![Settings](https://user-images.githubusercontent.com/60624108/145303004-2c6d4d9b-3048-42a7-8d55-e40014d2354a.png)
+![image](https://user-images.githubusercontent.com/60624108/145667334-0ac0dfc6-f8ff-4a03-a384-8a435337e54c.png)
+![image](https://user-images.githubusercontent.com/60624108/145667338-a7d2cd8e-9f66-4fdd-89fc-73c34d58fe33.png)
+![image](https://user-images.githubusercontent.com/60624108/145667348-414f3bbb-a774-48f1-992d-ce7db2d94b4e.png)
