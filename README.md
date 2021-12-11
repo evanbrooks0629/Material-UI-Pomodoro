@@ -9,7 +9,6 @@ Features:
 
 Features Soon To Come:
   - Desktop notifications
-  - Change preset timer and break length
   - Color themes
   - Smaller, more compact UI
 
