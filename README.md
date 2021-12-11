@@ -6,11 +6,11 @@ Features:
   - Sound alerts when timers complete
   - Setting for sound 
   - Setting for skipping through timers
+  - Small yet powerful UI (300px_^2_)
 
 Features Soon To Come:
   - Desktop notifications
   - Color themes
-  - Smaller, more compact UI
 
 To use, first clone the project 
 `git clone https://github.com/evanbrooks0629/Material-UI-Pomodoro.git`
