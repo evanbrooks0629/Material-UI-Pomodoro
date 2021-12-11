@@ -6,7 +6,7 @@ Features:
   - Sound alerts when timers complete
   - Setting for sound 
   - Setting for skipping through timers
-  - Small yet powerful UI (300px_^2_)
+  - Small yet powerful UI (300px x 300px)
 
 Features Soon To Come:
   - Desktop notifications
